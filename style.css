@@ -1,0 +1,55 @@
+.{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.div
+{
+    top:127px;
+    width: 303px;
+    height: 67px;
+    left: 41px;
+}
+h1{
+    width: 1167px;
+    height: 47px;
+    left: 41px;
+    top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    color: #000000;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#btn{
+    position: absolute;
+    width: 150px;
+    height: 47px;
+    left: 60px;
+    top: 200px;
+    background: #000000;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+    color: wheat;
+}
+button{
+    list-style-type: none;
+    text-decoration: none;
+    width: 101px;
+    height: 29px;
+    left: 142px;
+    top: 146px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}

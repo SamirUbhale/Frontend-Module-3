@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User's IP Address & Map Location</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	
+    </script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json", function(data){
+            $("#ip").html(data.ip);
+        })
+    </script>
+</head>
+<body>
+    <div><h1>MY PUBLIC IP ADDRESS:<span id="ip"></span></h1></div>
+    <button id="btn" onclick="window.location.href='index1.html';">Get Data</button>
+   
+</body>
+</html>

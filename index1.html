@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User's IP Address & Map Location</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	
+    </script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json", function(data){
+            $("#ip").html(data.ip);
+        })
+        </script>
+</head>
+<body>
+    <header>
+        <div><h1 class="heading">MY PUBLIC IP ADDRESS : <span id="ip"></span></h1>
+        </div>
+        <div class="lat">
+            <p>latitude :<span id="lat"></span></p>
+            <p>long : <span id="long"></span></p>
+        </div>
+        <div class="city">
+            <p>city : <span id="city"></span></p>
+            <p>Region : <span id="reg"></span></p>
+        </div>
+        <div class="host">
+            <p>Organisation : <span id="org"></span></p>
+            <p>Hostname : <span id="host"></span></p>
+        </div>
+        <div id="map">
+            <iframe src="https://maps.google.com/maps?q=20.9647293,77.7515756&output=embed" width="360" height="270" frameborder="0" style="border:0"></iframe>
+    </div>
+</header>
+<main>
+    <div class="Time">
+        <p>Time Zone :<span id="timezone"></span></p>
+    </div>
+    <div class="Date">
+        <p>Date And Time : <span id="Date"></span></p>
+    </div>
+    <div class="Pincode">
+        <p>Pincode : <span id="Pincode"></span></p>
+    </div>
+    <div class="Message">
+        <p>Message: <span id="Message"> </span></p>
+    </div>
+
+    <input type="text" placeholder="filter" id="searchText" onkeyup="myFunction()">
+    <i class="bi bi-search"></i>
+
+    <section>
+        <div class="box">
+            <div class="content">
+                <p>Name: <span id="name"></span></p>
+                <p>Branch Type: <span id="branch"></span></p>
+                <p>Delivery Status: <span id="status"></span></p>
+                <p>District: <span id="dist"></span></p>
+                <p>Division: <span id="div"></span></p>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="content">
+                <p>Name: <span id="name1"></span></p>
+                <p>Branch Type: <span id="branch1"></span></p>
+                <p>Delivery Status: <span id="status1"></span></p>
+                <p>District: <span id="dist1"></span></p>
+                <p>Division: <span id="div1"></span></p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="content">
+                <p>Name: <span id="name2"></span></p>
+                <p>Branch Type: <span id="branch2"></span></p>
+                <p>Delivery Status: <span id="status2"></span></p>
+                <p>District: <span id="dist2"></span></p>
+                <p>Division: <span id="div2"></span></p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="content">
+                <p>Name: <span id="name3"></span></p>
+                <p>Branch Type: <span id="branch3"></span></p>
+                <p>Delivery Status: <span id="status3"></span></p>
+                <p>District: <span id="dist3"></span></p>
+                <p>Division: <span id="div3"></span></p>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="content">
+                <p>Name: <span id="name4"></span></p>
+                <p>Branch Type: <span id="branch4"></span></p>
+                <p>Delivery Status: <span id="status4"></span></p>
+                <p>District: <span id="dist4"></span></p>
+                <p>Division: <span id="div4"></span></p>
+            </div>
+        </div>
+
+    </section>
+</main>
+<script src="./script.js"></script>
+
+</body>
+</html>
